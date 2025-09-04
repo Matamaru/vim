@@ -65,9 +65,16 @@ You can combine chords and melodies:
 | `h` | Left |
 | `j` | Down |
 | `k` | Up |
-| `L` | Right |
-| `{` | Paragraph up (jumps to next empty line above)|
-| `}` | Paragraph down (jumps to next empty line below) |
+| `l` | Right |
+| `w` | jumps to the first char of the next word |
+| `e` | jumps to the last char of the word |
+| `b` | jumps one word back to the first char of the word |
+| `)` | jumps to the first char of the next sentence |
+| `(` | jumps back to the first char of the sentence |
+| `{` | jumps back to previous paragraph (empty line above paragraph) |
+| `}` | jumps ahead to next paragraph (empty line below paragraph) |
+| `]]` | jumps to previous section |
+| `[[` | jumps to next section |
 
 
 ---
@@ -104,12 +111,10 @@ Especially in coding, we have a lot of repetetive processes. Vim is very good wi
 | `.`	| repeat last action | 
 | `a `| append: insert mode behind cursor position |
 | `<S-a>` | append at end of line: insert mode behind last char in line |
-| `w`	| word: jumps one word or symbol forward |
-| `e`	| end: jumps to last character of a word |
 
 ---
 
-## **Copy, paste, delete, cut**
+## Copy, paste, delete, cut
 
 | Notation | Meaning |
 |:---------|:--------|
@@ -121,7 +126,7 @@ Especially in coding, we have a lot of repetetive processes. Vim is very good wi
 | `yw` | yank(=copy) word to vim buffer |
 | `y{n}w` | yank the next n words |
 | `yy` | yank line |
-`{n}yy`				--> yank the next n lines
-`p`					--> paste from vim buffer
+| `{n}yy` | yank the next n lines |
+| `p` |	paste from vim buffer |
 		
 ---
